@@ -13,11 +13,11 @@ app.use(express.static("Public"));
 app.set("view engine", "ejs");
 var campground = [{
     name: "Rishabh Jain",
-    image: "1.png"
+    image: "2.png"
   },
   {
     name: "Aman Jain",
-    image: "2.jpg"
+    image: "1.jpg"
   },
   {
     name: "Goutam Jain",
@@ -50,5 +50,5 @@ app.get("/campground/new", function(req, res) {
   res.render("new");
 });
 app.listen(3000, function() {
-  console.log("Hey Your Server is Started");
+  console.log("Connected to AWS");
 });
